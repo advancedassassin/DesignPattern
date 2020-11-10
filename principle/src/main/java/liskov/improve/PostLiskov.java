@@ -19,6 +19,9 @@ public class PostLiskov {
         System.out.println("11+3="+b.minus(11,3));
         System.out.println("1+8="+b.minus(1,8));
         System.out.println("11+3+9="+b.add9(11,3));
+
+        System.out.println("B中使用A的方法11-3="+b.aClassMinus(11,3));
+
     }
 }
 
@@ -34,6 +37,9 @@ class A extends Base {
 
 class B extends Base {
 
+    // B中想用A用組合關係
+    A a = new A();
+
     public int minus(int p1, int p2){
         return p1 + p2;
     }
@@ -41,4 +47,9 @@ class B extends Base {
     public int add9(int p1, int p2){
         return minus(p1, p2) + 9;
     }
+
+    public int aClassMinus(int p1, int p2){
+        return a.minus(p1,p2);
+    }
+
 }
