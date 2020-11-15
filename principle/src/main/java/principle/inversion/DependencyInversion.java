@@ -1,4 +1,4 @@
-package inversion;
+package principle.inversion;
 
 /**
  * 依赖关系规范传递的三种方式

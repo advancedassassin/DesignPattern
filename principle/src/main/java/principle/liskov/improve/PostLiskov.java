@@ -1,4 +1,4 @@
-package liskov.improve;
+package principle.liskov.improve;
 
 /**
  * @ClassName PostLiskov

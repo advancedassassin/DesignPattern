@@ -1,4 +1,4 @@
-package liskov;
+package principle.liskov;
 
 /**
  * @ClassName BeforeLiskov
