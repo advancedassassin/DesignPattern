@@ -26,7 +26,7 @@ class SingletonLazy {
 
     private static SingletonLazy SINGLETON_LAZY;
 
-    public static SingletonLazy getInstance() {
+    public static synchronized SingletonLazy getInstance() {
         if (SINGLETON_LAZY == null) {
             SINGLETON_LAZY = new SingletonLazy();
         }
