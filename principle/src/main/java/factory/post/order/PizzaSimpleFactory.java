@@ -2,6 +2,7 @@ package factory.post.order;
 
 import factory.post.pizza.CheesePizza;
 import factory.post.pizza.GreekPizza;
+import factory.post.pizza.PepperPizza;
 import factory.post.pizza.Pizza;
 
 /**
@@ -22,6 +23,9 @@ public class PizzaSimpleFactory {
         } else if ("cheese".equals(orderType)) {
             pizza = new CheesePizza();
             pizza.setName("cheese-pizza");
+        } else if ("pepper".equals(orderType)) {
+            pizza = new PepperPizza();
+            pizza.setName("pepper-pizza");
         }
         return pizza;
     }
