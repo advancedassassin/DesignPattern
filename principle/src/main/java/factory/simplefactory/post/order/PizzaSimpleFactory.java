@@ -1,9 +1,9 @@
-package factory.post.order;
+package factory.simplefactory.post.order;
 
-import factory.post.pizza.CheesePizza;
-import factory.post.pizza.GreekPizza;
-import factory.post.pizza.PepperPizza;
-import factory.post.pizza.Pizza;
+import factory.simplefactory.post.pizza.CheesePizza;
+import factory.simplefactory.post.pizza.GreekPizza;
+import factory.simplefactory.post.pizza.PepperPizza;
+import factory.simplefactory.post.pizza.Pizza;
 
 /**
  * @ClassName Pizza

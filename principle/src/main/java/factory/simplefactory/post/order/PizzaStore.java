@@ -1,4 +1,4 @@
-package factory.before.order;
+package factory.simplefactory.post.order;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ public class PizzaStore {
 
     public static void main(String[] args) throws IOException {
 
-        new OrderPizza();
+        new OrderPizza(new PizzaSimpleFactory());
 
     }
 

@@ -1,4 +1,4 @@
-package factory.post.pizza;
+package factory.simplefactory.post.pizza;
 
 /**
  * @ClassName CheesePizza

@@ -1,4 +1,4 @@
-package factory.before.pizza;
+package factory.simplefactory.before.pizza;
 
 /**
  * @ClassName GreekPizza

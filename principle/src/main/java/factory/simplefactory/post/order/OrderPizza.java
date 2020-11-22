@@ -1,8 +1,6 @@
-package factory.post.order;
+package factory.simplefactory.post.order;
 
-import factory.before.pizza.CheesePizza;
-import factory.before.pizza.GreekPizza;
-import factory.post.pizza.Pizza;
+import factory.simplefactory.post.pizza.Pizza;
 
 import java.io.BufferedReader;
 import java.io.IOException;
