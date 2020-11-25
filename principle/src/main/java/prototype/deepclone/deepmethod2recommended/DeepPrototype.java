@@ -25,7 +25,7 @@ public class DeepPrototype implements Serializable, Cloneable {
         deep.deepCloneTarget = (DeepCloneTarget)deepCloneTarget.clone();
         return deep;
     }
-
+    // 深拷贝 - 方式二，使用序列化
     public DeepPrototype deepClone() throws IOException, ClassNotFoundException {
         // 创建流对象
         ByteArrayOutputStream baos;
@@ -45,7 +45,7 @@ public class DeepPrototype implements Serializable, Cloneable {
 
 
 
-
+        // 关流
         ois.close();
         bais.close();
         oos.close();
