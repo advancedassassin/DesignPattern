@@ -27,10 +27,12 @@ public class DispatchServlet {
         HttpController httpController = new HttpController();
         SimpleController simpleController = new SimpleController();
         AnnotationController annotationController = new AnnotationController();
+        Controller o = new Controller() {
+        };
 
         // 得到对应的适配器
-        HandlerAdapter adapter = getHandlerAdapter(httpController);
-        adapter.handler(httpController);
+        HandlerAdapter adapter = getHandlerAdapter(o);
+        adapter.handler(o);
     }
 
     private HandlerAdapter getHandlerAdapter(Controller controller) throws Exception{
